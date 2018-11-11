@@ -1,0 +1,110 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eeeeee;
+color: #505050 !important;
+
+}
+
+#reloadGame {margin:auto }
+
+.game {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 1px #e3e2e2;
+    box-shadow: 0px 0px 10px #b1b1b1;
+}
+button {
+    background-color: #ffffff;
+    border: solid 1px #a8a8a8;
+    font-size: 16px;
+    color: #505050;
+    border-radius: 3px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+button[disabled] {
+    background-color: #d8d8d8;
+    cursor: not-allowed;
+}
+button:hover {
+    background-color: #eaeaea;
+}
+button:active {
+    background-color: #e0e0e0;
+}
+button:focus {
+    outline: none;
+}
+h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+small {
+    font-size: 14px;
+}
+
+.ai{
+background-image: url("circle.jpg");
+
+}
+
+.player{
+background-image: url("cross.jpg");
+
+}
+.actions{
+text-align: center;
+
+}
+.container{
+margin: 50px auto;
+width: 300px;
+
+}
+.row {
+    width: 192px;
+    height: 192px;
+    background: #fff;
+    float: left;
+    border: 2px solid grey;
+    margin: 2px;
+    transition-duration: 0.3s;
+}
+.row:hover {
+    background: #999;
+}
+
+.cell{
+    width: 192px;
+    height: 192px;
+    background: #fff;
+    float: left;
+    border: 2px solid grey;
+    margin: 2px;
+    transition-duration: 0.3s;
+    
+}
+
+.cell:hover{
+    background: #999;
+}
+
+.cell2{
+    width: 112px;
+    height: 112px;
+    background: #fff;
+    float: left;
+    border: 2px solid grey;
+    margin: 2px;
+    transition-duration: 0.3s;
+    
+}
+
+.cell2:hover{
+    background: #999;
+}
