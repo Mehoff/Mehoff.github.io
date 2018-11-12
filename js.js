@@ -1,8 +1,15 @@
 var t;
 var gametype;
+var Xsign = prompt("Введите URL для крестика","img/cross.png");
+var Osign = prompt("Введите URL для нолика","img/circle.png");
+console.log(Xsign);
+console.log(Osign);
+
+
 document.getElementById("reloadGame").style.display = "none";
 document.getElementById("frame").style.display = "none";
 document.getElementById("frame2").style.display = "none";
+
 
 function Draw(gametype){
 if(gametype == 1){
@@ -34,13 +41,27 @@ gametype = document.getElementById("selectBar").value;
 Draw(gametype);
 document.getElementById("startGame").style.display = "none";
 document.getElementById("selectBar").style.display = "none";
-console.log(t);
+document.getElementById("whoIsFirst").style.display = "none";
+document.getElementById("figureToPlay").style.display = "none";
+if(document.getElementById("whoIsFirst").value == 2){ai(gametype);}
 }
 
 function placeRow(id, role){
 
-if(role == 'player'){document.getElementById(id).innerHTML = '<img src = "img/cross.png" width="100%">';}
-if(role == 'ai'){document.getElementById(id).innerHTML ='<img src = "img/circle.png" width="100%">';}
+if(role == 'player'){
+	if(document.getElementById("figureToPlay").value == 1){
+	document.getElementById(id).innerHTML = '<img src = "' + Xsign + '" width="100%">';}
+	else {document.getElementById(id).innerHTML = '<img src = "' + Osign + '" width="100%">';}
+}
+
+if(role == 'ai'){
+
+	if(document.getElementById("figureToPlay").value == 1){
+	document.getElementById(id).innerHTML = '<img src = "' + Osign + '" width="100%">';}
+	else {document.getElementById(id).innerHTML = '<img src = "' + Xsign + '" width="100%">';}
+}
+
+
 }
 
 function move(id, role, gametype) {

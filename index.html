@@ -57,9 +57,20 @@
   </div>
 
   <p style = "text-align: center">
+
+    <select id ="whoIsFirst">
+      <option value = "1">Игрок первый</option>
+      <option value = "2">Игрок второй</option>
+    </select>
+
     <select id = "selectBar">
 <option value = "1">3x3</option>
 <option value = "2">5x5</option>
+    </select>
+
+    <select id = "figureToPlay">
+  <option value = "1">Игрок X</option>
+  <option value = "2">Игрок O</option>
     </select>
     <button id="reloadGame" onclick="location.reload();">Новая игра</button>
     <button id="startGame" onclick="mainFunction();">Начать игру</button>
