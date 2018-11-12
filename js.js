@@ -53,6 +53,7 @@ document.getElementById("whoIsFirst").style.display = "none";
 document.getElementById("figureToPlay").style.display = "none";
 document.getElementById("getCross").style.display = "none";
 document.getElementById("getCircle").style.display = "none";
+document.getElementById("row").style.display = "none";
 
 if(document.getElementById("whoIsFirst").value == 2){ai(gametype);}
 }
